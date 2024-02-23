@@ -1,4 +1,10 @@
 
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 section{
   padding: 50px 0;
 }
@@ -62,10 +68,15 @@ section{
 
 /* Projects Section */
 
+.project-card{
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+  margin-top: 20px;
+}
+
 .circle{
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   margin: 50px auto 0;
   transition: all 0.3s ease-in-out;
   align-items: center;
@@ -88,5 +99,26 @@ section{
 .project-item-title{
   font-size: 14px;
   text-align: center;
+}
+
+/* Address */
+
+.address{
+  background: #222222;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+/* footer */
+
+footer{
+  padding: 50px 0;
+  color: #fff;
+  background: #0c86a0;
+}
+
+footer p{
+  font-size: 13px;
 }
 
