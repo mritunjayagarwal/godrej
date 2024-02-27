@@ -9,7 +9,7 @@ function App() {
       <main>
         <nav className="navbar navbar-light bg-light p-1 fixed-top">
           <a className="navbar-brand ml-5" href="#">
-            <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/gpl_logo.png" className='img-fluid' style = {{height: "40px"}} alt="" />
+            <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/gpl_logo.png" className='img-fluid' style={{ height: "40px" }} alt="" />
           </a>
         </nav>
         <section className='p-0 mt-5'>
@@ -26,23 +26,24 @@ function App() {
           </OwlCarousel>
         </section>
         <section className="overview">
-          <div className='container'>
+          <div className='container-fluid px-5'>
             <div className="overview-wrapper">
               <div className='row pl-3'>
-                <div className='col-lg-4 border-partial'>
+                <div className='col-lg-3 border-partial'>
                   <div className='border-partial-right-top'></div>
                   <div className='border-partial-right-bottom'></div>
                 </div>
               </div>
               <div className='overview-absolute'>
                 <div className='row d-flex align-items-center h-100'>
-                  <div className='col-lg-3 text-center'>
-                    <h1 className='text-white'>Overview</h1>
+                  <div className='col-lg-2 text-center'>
+                    <h1 className='text-white overview-title'>Overview</h1>
                   </div>
-                  <div className='col-lg-9'>
+                  <div className='col-lg-10'>
                     <div className='overview-main'>
-                      <h1 className='text-white'>Overview Bla Bla</h1>
-                      <p className='text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare, justo ut finibus condimentum, augue est volutpat odio, sit amet dictum orci neque quis justo. Pellentesque eu tristique lorem. Mauris nulla tortor, egestas in nisl non, dignissim vulputate mi. Aenean ullamcorper consequat ipsum, non laoreet purus aliquam non. Donec ultrices nibh dui, eu maximus quam malesuada non. Ut cursus mauris ut facilisis tincidunt. Praesent consequat iaculis sapien eget fringilla.</p>
+                      <h1 className='text-white overview-title'>YOUR TICKET TO A LIFETIME OF EXOTIC LIVING</h1>
+                      <p className='text-white'>Discover the allure of tropical islands with greens and lagoons along the expressway, it is a tropical haven built with the vision of giving you the finest living experience. Enjoy your uniquely designed 3 and 4 bed bespoke homes to the fullest with Island themed landscape. Here, every door opens into a magnificent world of possibilities in the lap of luxury, with an incredible view.</p>
+                      <h5 className='text-white overview-title-2'>Discover Spacious 3BHK & 4BHK Homes Starting from ₹3.20 Crore*</h5>
                     </div>
                   </div>
                 </div>
@@ -52,9 +53,11 @@ function App() {
         </section>
         <section className='configurations-section'>
           <div className='container'>
-            <h1 className='text-center'>Configurations</h1>
-            <table class="table table-striped text-center mt-5">
-              <thead style={{ background: "#0a4f79", color: "#fff", borderTop: "2px solid #0a4f79" }}>
+            <h1 className='text-center section-header text-white'>Configurations</h1>
+            <hr className='blue-hr'/>
+            <div className='mt-5' style = {{background: "#fff", padding: "5px"}}>
+            <table class="table table-striped text-center m-0">
+              <thead style={{ background: "#0a4f79", color: "#fff", borderTop: "2px solid #0a4f79", fontWeight: 300 }}>
                 <tr>
                   <th scope="col">Typology</th>
                   <th scope="col">Carpet Area (Sq m)</th>
@@ -77,127 +80,152 @@ function App() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </section>
         <section>
           <div className='container'>
-            <h1 className='text-center'>Project Details</h1>
+            <h1 className='text-center section-header'>Project Details</h1>
+            <hr className='blue-hr'/>
             <div className='row'>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
                 </div>
               </div>
               <div className='col-lg-3'>
-                <div className='project-card'>
+                <div className='project-card d-flex align-items-center justify-content-center'>
                   <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
-                    </div>
-                    <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3'>
-                <div className='project-card'>
-                  <div>
-                    <div className='circle'>
-                      <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                    <div className='d-flex align-items-center justify-content-center' style = {{position: "relative"}}>
+                      <div className='circle'>
+                        <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/highlights/1.png" className='img-fluid'></img>
+                      </div>
+                      <span className='dot'></span>
                     </div>
                     <h1 className='project-item-title mt-2'>The Cabana Clubhouse</h1>
                   </div>
@@ -208,7 +236,7 @@ function App() {
         </section>
         <section>
           <div className='row'>
-            <div className='col-lg-6'>
+            <div className='col-lg-6 px-5'>
               <div className='container' style={{ position: "relative" }}>
                 <div className='row'>
                   <div className='col-lg-4 border-partial' style={{ height: "600px" }}>
@@ -217,15 +245,16 @@ function App() {
                   </div>
                 </div>
                 <div className='overview-absolute py-5 d-flex align-items-center pl-3'>
-                  <div>
-                    <h1>EXPERIENCE ISLAND LIVING, ALONG THE EXPRESSWAY</h1>
-                    <p>Come closer to the world of convenience and the city-life as you reside in the marquee development, right by the expressway. Escape to your tropical island that connects you to endless opportunities with prime commercial hubs, eminent schools, recreational avenues as well as 2 International airports in proximity.</p>
-                    <ul>
-                      <li>Cambridge School – 12 Mins</li>
-                      <li>Apollo Cradle & Apollo Spectra – 10 Mins</li>
-                      <li>Uptown Square – 11 Mins</li>
-                      <li>South Extension Market - 25 Mins</li>
-                      <li>IGI Airport – 55 Mins</li>
+                  <div className='container'>
+                    <h1 className='section-header'>EXPERIENCE ISLAND LIVING, ALONG THE EXPRESSWAY</h1>
+                    <hr className = "blue-hr" style = {{margin: "unset"}}/>
+                    <p className='mt-3 map-para'>Come closer to the world of convenience and the city-life as you reside in the marquee development, right by the expressway. Escape to your tropical island that connects you to endless opportunities with prime commercial hubs, eminent schools, recreational avenues as well as 2 International airports in proximity.</p>
+                    <ul style = {{listStyleType: "none", "margin-left": "-40px", "color": "#707070"}}>
+                      <li><i className='fa fa-map-marker'></i> Cambridge School – 12 Mins</li>
+                      <li><i className='fa fa-map-marker'></i> Apollo Cradle & Apollo Spectra – 10 Mins</li>
+                      <li><i className='fa fa-map-marker'></i> Uptown Square – 11 Mins</li>
+                      <li><i className='fa fa-map-marker'></i> South Extension Market - 25 Mins</li>
+                      <li><i className='fa fa-map-marker'></i> IGI Airport – 55 Mins</li>
                     </ul>
                   </div>
                 </div>

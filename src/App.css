@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 html, body{
   max-width: 100%;
   overflow-x: hidden;
@@ -6,14 +6,32 @@ html, body{
 }
 
 section{
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
-.container{
-  max-width: 80%;
-  margin: 0 auto;
+.section-header{
+  font-size: 45px;
+  line-height: 45px;
+  font-family: Cinzel;
+  text-transform: uppercase;
+  color: #0A4F79;
+  font-weight: 500;
 }
 
+hr{
+  width:100px; 
+  margin: auto;
+  margin-top: 20px;
+  height: 1px;
+}
+
+.blue-hr{
+  background: #0A4F79;
+}
+
+.white-hr{
+  background: #fff;
+}
 
 /* Overview Section */
 
@@ -35,6 +53,14 @@ section{
   padding: 1em;
 }
 
+.overview-title{
+  font-family: Cinzel;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
 .border-partial {
   height: 400px;
   position: relative;
@@ -43,16 +69,16 @@ section{
   border-left: 5px solid #0f6fac;  
 }
 .border-partial-right-top {
-  border-left: 8px solid #0f6fac;
+  border-left: 7px solid #0f6fac;
   position: absolute;
   top: 0;
   right:0;
-  bottom: 85%;
+  bottom: 90%;
 }
 .border-partial-right-bottom {
-  border-left: 8px solid #0f6fac;
+  border-left: 7px solid #0f6fac;
   position: absolute;
-  top: 85%;
+  top: 90%;
   right:0;
   bottom: 0;
 }
@@ -70,14 +96,19 @@ section{
 
 .project-card{
   box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
-  margin-top: 20px;
+  margin-top: 50px;
+  padding: 2em 0;
+  transition: 0.5s;
+}
+
+.project-card:hover{
+  margin-top: 30px;
 }
 
 .circle{
   display: flex;
-  width: 70px;
-  height: 70px;
-  margin: 50px auto 0;
+  width: 90px;
+  height: 90px;
   transition: all 0.3s ease-in-out;
   align-items: center;
   justify-content: center;
@@ -96,9 +127,33 @@ section{
        -webkit-border-radius: 10px 10px 10px 10px;
 }
 
+.dot {
+  height: 35px;
+  width: 35px;
+  background-color: rgba(70, 155, 235, 0.6);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
 .project-item-title{
   font-size: 14px;
   text-align: center;
+  color: #000;
+  font-weight: 400;
+  margin-top: 20px !important;
+}
+
+/* Map */
+
+.map-para{
+  color: #707070;
+}
+
+i{
+  color: #0A4F79;
 }
 
 /* Address */
