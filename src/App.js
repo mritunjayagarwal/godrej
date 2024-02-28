@@ -7,12 +7,62 @@ function App() {
   return (
     <div>
       <main>
-        <nav className="navbar navbar-light bg-light p-1 fixed-top">
-          <a className="navbar-brand ml-5" href="#">
-            <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/gpl_logo.png" className='img-fluid' style={{ height: "40px" }} alt="" />
-          </a>
+        <nav class="navbar navbar-expand-lg m-0 fixed-top border bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+              <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/gpl_logo.png" class="img-fluid" alt="" /></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarText"
+              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarText">
+              <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="/" class="px-3 pt-2 btn-link">
+                    Overview
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class='px-3 pt-2 btn-link' href='/xnetwork'>
+                    Floor Plans
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class='px-3 pt-2 btn-link' href='/nft'>
+                    Project Highlights
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class='px-3 pt-2 btn-link' href='/nft'>
+                    Price
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class='px-3 pt-2 btn-link' href='/nft'>
+                    Gallery
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class='px-3 pt-2 btn-link' href='/nft'>
+                    Location
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/project_logo.png" class="img-fluid godrej-logo-right" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <section className='p-0 mt-5'>
+        <section className='p-0 mt-5 hero-section'>
+          <div className='branding-modal'>
+            <h1 className='branding-title-location'>GODREJ 146 | NOIDA SEC-146</h1>
+            <h1 className='branding-title-specs'><span className='highlight'>3/4 BHK</span> Ultra Luxury Apartments</h1>
+            <h1 className='branding-title-price'>Price: On Request</h1>
+            <button className='floor-plan-item-btn'>Enquire Now</button>
+          </div>
           <OwlCarousel className='owl-theme' loop items={1} autoplay={true} autoplayTimeout={3000} dots={false} nav={false}>
             <div class='item d-flex align-items-center'>
               <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/slider/slide2.jpg" className='w-100' alt="" />
@@ -356,8 +406,8 @@ function App() {
         </section>
         <section>
           <div className='container'>
-          <h1 className='section-header'>Premium Connectivity</h1>
-          <hr className='blue-hr' style = {{margin: "unset"}}/>
+            <h1 className='section-header'>Premium Connectivity</h1>
+            <hr className='blue-hr' style={{ margin: "unset" }} />
             <div className='row'>
               <div className='col-lg-6'>
                 <p className='mt-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis molestiae corporis architecto nulla quibusdam quos fuga, recusandae quis ab animi nostrum, temporibus enim ducimus ullam molestias dolore vitae ipsam perspiciatis.</p>
@@ -429,7 +479,81 @@ function App() {
                 <button className='floor-plan-item-btn mt-3'>Get Location on Whatsapp</button>
               </div>
               <div className='col-lg-6 d-flex align-items-center justify-content-center'>
-                <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/map.webp" className='img-fluid' style = {{width: "80%"}} alt="" />
+                <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/map.webp" className='img-fluid' style={{ width: "80%" }} alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='configurations-section' style={{ background: "rgba(240,240,240, 0.4)" }}>
+          <div className='container'>
+            <h1 className='text-center section-header'>Pricing</h1>
+            <hr className='blue-hr' />
+            <div className='mt-5' style={{ background: "#fff", padding: "5px" }}>
+              <table class="table table-striped text-center m-0">
+                <thead style={{ background: "#0a4f79", color: "#fff", borderTop: "2px solid #0a4f79", fontWeight: 300 }}>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Scalable Area</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody className='bg-light'>
+                  <tr>
+                    <th scope="row">3 BHK (Type-1)</th>
+                    <td>90.84</td>
+                    <td>21.38</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4 BHK (Type-1)</th>
+                    <td>90.84</td>
+                    <td>21.38</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section className='site-visit'>
+          <div style={{ background: "#0A4F79", height: "150px" }}></div>
+          <div className='container'>
+            <div className='site-visit-card'>
+              <div className='row'>
+                <div className='col-lg-7'>
+                  <div className='card-form'>
+                    <h1 className='section-header'>Schedule Free Site Visit</h1>
+                    <form className='mt-5 site-visit-form'>
+                      <div className='row'>
+                        <div className='col-lg-6'>
+                          <div class="group">
+                            <input type="text" required />
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Name*</label>
+                          </div>
+                        </div>
+                        <div className='col-lg-6'>
+                          <div class="group">
+                            <input type="text" required />
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Email*</label>
+                          </div>
+                        </div>
+                        <div className='col-lg-6'>
+                          <div class="group">
+                            <input type="text" required />
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Mobile Number*</label>
+                          </div>
+                        </div>
+                      </div>
+                      <button className='floor-plan-item-btn'>Submit</button>
+                    </form>
+                  </div>
+                </div>
+                <div className='col-lg-5 visit-img-container'>
+                </div>
               </div>
             </div>
           </div>

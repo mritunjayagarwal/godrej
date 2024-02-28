@@ -35,6 +35,31 @@ hr {
   background: #fff;
 }
 
+.godrej-logo-right{
+  filter: invert(1)
+}
+
+/* Hero Section */
+
+.hero-section{
+  position: relative;
+}
+
+.branding-modal{
+  position: absolute;
+  width: 30%;
+  z-index: 999;
+  background: #fff;
+  padding: 1em;
+  border-radius: 20px;
+  bottom: 85px;
+  left: 30px
+}
+
+.branding-title-location{
+  font-size: 24px;
+}
+
 /* Overview Section */
 
 .overview-wrapper {
@@ -273,6 +298,120 @@ i {
   padding: 10px 0;
   color: #fff;
   text-align: center;
+}
+
+
+/* Visit Site Section */
+
+.site-visit-card{
+  background: #fff;
+  border-radius: 20px;
+  margin-top: -80px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+}
+
+.card-form{
+  padding: 1.5em 1em;
+}
+
+.visit-img-container{
+  background: url('https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.site-visit-form .group { 
+  position:relative; 
+  margin-bottom:35px; 
+}
+.site-visit-form input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.site-visit-form input:focus{ outline:none; }
+
+/* LABEL ======================================= */
+.site-visit-form label{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.site-visit-form input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.site-visit-form .bar 	{ position:relative; display:block; width:300px; }
+.site-visit-form .bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.site-visit-form .bar:before {
+  left:50%;
+}
+.site-visit-form .bar:after {
+  right:50%; 
+}
+
+/* active state */
+.site-visit-form input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.site-visit-form .highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.site-visit-form input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
 }
 
 /* footer */
