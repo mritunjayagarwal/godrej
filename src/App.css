@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-html, body{
+
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-section{
+section {
   padding: 100px 0;
 }
 
-.section-header{
+.section-header {
   font-size: 45px;
   line-height: 45px;
   font-family: Cinzel;
@@ -18,29 +20,29 @@ section{
   font-weight: 500;
 }
 
-hr{
-  width:100px; 
+hr {
+  width: 100px;
   margin: auto;
   margin-top: 20px;
   height: 1px;
 }
 
-.blue-hr{
+.blue-hr {
   background: #0A4F79;
 }
 
-.white-hr{
+.white-hr {
   background: #fff;
 }
 
 /* Overview Section */
 
-.overview-wrapper{
+.overview-wrapper {
   background: #0A4F79;
   position: relative;
 }
 
-.overview-absolute{
+.overview-absolute {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -48,12 +50,12 @@ hr{
   right: 0;
 }
 
-.overview-main{
+.overview-main {
   background: #0c86a0;
   padding: 1em;
 }
 
-.overview-title{
+.overview-title {
   font-family: Cinzel;
   font-size: 30px;
   text-transform: uppercase;
@@ -64,29 +66,108 @@ hr{
 .border-partial {
   height: 400px;
   position: relative;
-  border-bottom: 5px solid #0f6fac;  
-  border-top: 5px solid #0f6fac;  
-  border-left: 5px solid #0f6fac;  
+  border-bottom: 5px solid #0f6fac;
+  border-top: 5px solid #0f6fac;
+  border-left: 5px solid #0f6fac;
 }
+
 .border-partial-right-top {
   border-left: 7px solid #0f6fac;
   position: absolute;
   top: 0;
-  right:0;
+  right: 0;
   bottom: 90%;
 }
+
 .border-partial-right-bottom {
   border-left: 7px solid #0f6fac;
   position: absolute;
   top: 90%;
-  right:0;
+  right: 0;
   bottom: 0;
 }
 
+/* Gradient overview Section */
+
+.overview-description{
+  background: #3B7294;
+}
+
+.gradient-bg {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  color: #fff;
+  padding: 2em 0;
+}
+
+.gradient-bg i{
+  color: #fff;
+  font-size: 30px;
+}
+
+.overview-config-title{
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0;
+}
+
+.overview-config-desc{
+  font-weight: 700;
+  font-size:20px;
+  margin: 0;
+}
+
+/* Floor Plan Section */
+
+.floor-plan-item{
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+  padding: 1.5em;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.floor-plan-item-img-wrapper{
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+}
+
+.floor-plan-item .floor-img{
+  filter: blur(2px)
+}
+
+.floor-plan-item-btn{
+  border: unset;
+  outline: unset;
+  padding: 5px 25px;
+  border-radius: 5px;
+  background: #3B7294;
+  font-weight: 600;
+  color: #fff;
+}
+
+.floor-plan-item i{
+  font-size: 30px;
+  color: #3B7294;
+}
+
+.floor-plan-item-type{
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.floor-plan-item-desc{
+  color: #3B7294;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.bed-icon{
+  width:30px;
+}
 
 /* Configurations Section */
 
-.configurations-section{
+.configurations-section {
   background: #3b7294;
 }
 
@@ -94,18 +175,18 @@ hr{
 
 /* Projects Section */
 
-.project-card{
+.project-card {
   box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
   margin-top: 50px;
   padding: 2em 0;
   transition: 0.5s;
 }
 
-.project-card:hover{
+.project-card:hover {
   margin-top: 30px;
 }
 
-.circle{
+.circle {
   display: flex;
   width: 90px;
   height: 90px;
@@ -113,18 +194,20 @@ hr{
   align-items: center;
   justify-content: center;
 }
-.circle:hover{
+
+.circle:hover {
   border: 3px solid #000;
 }
-.circle{
-     border-radius: 100%;
-     border: 3px solid #fff;
-     -moz-border-radius: 100%;
-     -webkit-border-radius: 100%;
+
+.circle {
+  border-radius: 100%;
+  border: 3px solid #fff;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
 }
 
-.circle:hover{
-       -webkit-border-radius: 10px 10px 10px 10px;
+.circle:hover {
+  -webkit-border-radius: 10px 10px 10px 10px;
 }
 
 .dot {
@@ -138,7 +221,7 @@ hr{
   left: 30%;
 }
 
-.project-item-title{
+.project-item-title {
   font-size: 14px;
   text-align: center;
   color: #000;
@@ -146,19 +229,46 @@ hr{
   margin-top: 20px !important;
 }
 
+/* Luxurious Amenities */
+
+.luxurious-amenities{
+  background: rgba(230, 230, 230, 0.3);
+}
+
+.luxurious-amenities-item{
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  padding: 1em 2em;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.luxurious-amenities-item .svg-img{
+  filter: brightness(100);
+  width: 50px;
+}
+
+.luxurious-amenities-item-desc{
+  color:#fff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
 /* Map */
 
-.map-para{
+.map-para {
   color: #707070;
 }
 
-i{
+i {
   color: #0A4F79;
 }
 
 /* Address */
 
-.address{
+.address {
   background: #222222;
   padding: 10px 0;
   color: #fff;
@@ -167,13 +277,12 @@ i{
 
 /* footer */
 
-footer{
+footer {
   padding: 50px 0;
   color: #fff;
   background: #0c86a0;
 }
 
-footer p{
+footer p {
   font-size: 13px;
 }
-
