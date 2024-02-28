@@ -377,23 +377,10 @@ function App() {
                 <div className='d-flex justify-content-between align-items-center'>
                   <div className='d-flex align-items-center justify-content-center'>
                     <div>
-                      <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/icons/airport.svg" className='img-fluid' style={{ width: "30px" }} alt="" />
+                      <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/icons/metro.svg" className='img-fluid' style={{ width: "30px" }} alt="" />
                     </div>
                     <div>
-                      <p className='pt-2 px-2'>IGI Aiport</p>
-                    </div>
-                  </div>
-                  <div>
-                    55mins
-                  </div>
-                </div>
-                <div className='d-flex justify-content-between align-items-center'>
-                  <div className='d-flex align-items-center justify-content-center'>
-                    <div>
-                      <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/icons/airport.svg" className='img-fluid' style={{ width: "30px" }} alt="" />
-                    </div>
-                    <div>
-                      <p className='pt-2 px-2'>IGI Aiport</p>
+                      <p className='pt-2 px-2'>Metro Station</p>
                     </div>
                   </div>
                   <div>
@@ -403,10 +390,10 @@ function App() {
                 <div className='d-flex justify-content-between align-items-center'>
                   <div className='d-flex align-items-center justify-content-center'>
                     <div>
-                      <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/icons/airport.svg" className='img-fluid' style={{ width: "30px" }} alt="" />
+                      <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/icons/chowk.svg" className='img-fluid' style={{ width: "30px" }} alt="" />
                     </div>
                     <div>
-                      <p className='pt-2 px-2'>IGI Aiport</p>
+                      <p className='pt-2 px-2'>Advant, Sector 142, Noida</p>
                     </div>
                   </div>
                   <div>
@@ -416,10 +403,23 @@ function App() {
                 <div className='d-flex justify-content-between align-items-center'>
                   <div className='d-flex align-items-center justify-content-center'>
                     <div>
-                      <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/icons/airport.svg" className='img-fluid' style={{ width: "30px" }} alt="" />
+                      <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/icons/garden.svg" className='img-fluid' style={{ width: "30px" }} alt="" />
                     </div>
                     <div>
-                      <p className='pt-2 px-2'>IGI Aiport</p>
+                      <p className='pt-2 px-2'>Akshardham Temple</p>
+                    </div>
+                  </div>
+                  <div>
+                    55mins
+                  </div>
+                </div>
+                <div className='d-flex justify-content-between align-items-center'>
+                  <div className='d-flex align-items-center justify-content-center'>
+                    <div>
+                      <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/icons/expressway.svg" className='img-fluid' style={{ width: "30px" }} alt="" />
+                    </div>
+                    <div>
+                      <p className='pt-2 px-2'>Anand Vihar ISBT</p>
                     </div>
                   </div>
                   <div>
