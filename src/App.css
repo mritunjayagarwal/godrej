@@ -39,6 +39,23 @@ hr {
   filter: invert(1)
 }
 
+/*Navbar */
+
+.nav-item a{
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.nav-item a:hover{
+  text-decoration: none;
+  color: #3B7294;
+  transform: scale(1.5) !important;
+}
+
 /* Hero Section */
 
 .hero-section{
@@ -279,6 +296,35 @@ hr {
   font-weight: 700;
   font-size: 15px;
   margin-top: 10px;
+}
+
+/* Gallery Section */
+
+.selected {
+  color: #fff;
+  background-color: #0A4F79;
+  border: 1px solid #00867d;
+  padding: 0.5em 1.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.notSelected {
+  color: #fff;
+  background-color: transparent;
+  border: unset;
+  outline: unset;
+  padding: 0.5em 1.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.display-block{
+  display: block !important;
+}
+
+.display-none{
+  display: none !important;
 }
 
 /* Map */

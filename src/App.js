@@ -2,8 +2,28 @@ import './App.css';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { useState } from 'react';
 
 function App() {
+  const [selected, setSelected] = useState("btn1");
+  const responsive = {
+    1366: {
+      items: 3,
+      margin: 50
+    },
+    1024: {
+      items: 3,
+      dots: true,
+    },
+    768: {
+      items: 1,
+      dots: true,
+    },
+    0: {
+      items: 1,
+      dots: true,
+    }
+  }
   return (
     <div>
       <main>
@@ -346,6 +366,34 @@ function App() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section style = {{background: "#0C86A0"}}>
+          <h1 className='section-header text-center text-white'>Gallery</h1>
+          <hr className='blue-hr' />
+          <div className='text-center mt-5'>
+            <div className="buttons">
+              <button id="option1Btn" className={selected === "btn1" ? "selected" : "notSelected"} onClick={() => setSelected("btn1")}>
+                INTERIOR
+              </button>
+              <button className={selected === "btn2" ? "selected" : "notSelected"} onClick={() => setSelected("btn2")}>
+                EXTERIOR
+              </button>
+            </div>
+            <OwlCarousel className= {`owl-theme mt-5 ${selected == 'btn1' ? 'display-block': 'display-none'}`} loop items={1} autoplay={true} autoplayTimeout={3000} dots={false} nav={false} responsive={responsive}>
+              <div class='item d-flex align-items-center'>
+                <a href={require('./img/slider.jpg')} className='glightbox3'>
+                <img src={require('./img/slider.jpg')} className='glightbox w-100' alt="" />
+                </a>
+              </div>
+            </OwlCarousel>
+            <OwlCarousel className= {`owl-theme mt-5 ${selected == 'btn2' ? 'display-block': 'display-none'}`} loop items={1} autoplay={true} autoplayTimeout={3000} dots={false} nav={false} responsive={responsive}>
+              <div class='item d-flex align-items-center'>
+                <a href={require('./img/slide2.jpg')} className='glightbox3'>
+                <img src={require('./img/slide2.jpg')} className='glightbox w-100' alt="" />
+                </a>
+              </div>
+            </OwlCarousel>
           </div>
         </section>
         <section className='luxurious-amenities'>
