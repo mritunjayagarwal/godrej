@@ -87,7 +87,7 @@ function App() {
             <h1 className='branding-title-location'>GODREJ 146 | NOIDA SEC-146</h1>
             <h1 className='branding-title-specs'><span className='highlight'>3/4 BHK</span> Ultra Luxury Apartments</h1>
             <h1 className='branding-title-price'>Price: On Request</h1>
-            <button className='floor-plan-item-btn'>Enquire Now</button>
+            <button className='floor-plan-item-btn mt-2' onClick={handleShow}>Enquire Now</button>
           </div>
           <OwlCarousel className='owl-theme' loop items={1} autoplay={true} autoplayTimeout={3000} dots={false} nav={false}>
             <div class='item d-flex align-items-center'>
@@ -128,30 +128,45 @@ function App() {
           <div className='container'>
             <div className='row'>
               <div className='col-lg-6 d-flex align-items-center'>
-                <div className='text-white'>
-                  <h1 className='section-header text-white'>Godrej 146 Overview</h1>
-                  <hr className='white-hr mb-3' style={{ margin: "unset" }} />
+                <div>
+                  <h1 className='section-header'>Godrej 146 Overview</h1>
+                  <hr className='blue-hr mb-3' style={{ margin: "unset" }} />
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate esse tenetur itaque, totam amet reiciendis adipisci architecto veritatis iusto necessitatibus officia modi ipsum ipsam! Mollitia, dignissimos? Nisi, molestiae accusamus!</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate esse tenetur itaque, totam amet reiciendis adipisci architecto veritatis iusto necessitatibus officia modi ipsum ipsam! Mollitia, dignissimos? Nisi, molestiae accusamus!</p>
                 </div>
               </div>
               <div className='col-lg-6'>
-                <div className='gradient-bg h-100 d-flex align-items-center justify-content-center'>
-                  <div className='d-flex text-center'>
-                    <div className='px-3' style={{ flex: 1 }}>
-                      <p><i className='fa fa-bed'></i></p>
-                      <p className='overview-config-title'>Configuration</p>
-                      <p className='overview-config-desc'>3/4 BHK</p>
+                <div className='row'>
+                  <div className='col-lg-12'>
+                    <div className='gradient-bg h-100 d-flex align-items-center justify-content-center'>
+                      <div className='d-flex text-center'>
+                        <div className='px-5' style={{ flex: 1 }}>
+                          <p><i className='fa fa-bed'></i></p>
+                          <p className='overview-config-title'>Configuration</p>
+                          <p className='overview-config-desc'>3/4 BHK</p>
+                        </div>
+                        <div className='px-5' style={{ flex: 1 }}>
+                          <p><i className='fa fa-bed'></i></p>
+                          <p className='overview-config-title'>Configuration</p>
+                          <p className='overview-config-desc'>3/4 BHK</p>
+                        </div>
+                      </div>
                     </div>
-                    <div className='px-3' style={{ flex: 1 }}>
-                      <p><i className='fa fa-bed'></i></p>
-                      <p className='overview-config-title'>Configuration</p>
-                      <p className='overview-config-desc'>3/4 BHK</p>
-                    </div>
-                    <div className='px-3' style={{ flex: 1 }}>
-                      <p><i className='fa fa-bed'></i></p>
-                      <p className='overview-config-title'>Configuration</p>
-                      <p className='overview-config-desc'>3/4 BHK</p>
+                  </div>
+                  <div className='col-lg-12'>
+                    <div className='gradient-bg h-100 d-flex align-items-center justify-content-center'>
+                      <div className='d-flex text-center'>
+                        <div className='px-5' style={{ flex: 1 }}>
+                          <p><i className='fa fa-bed'></i></p>
+                          <p className='overview-config-title'>Configuration</p>
+                          <p className='overview-config-desc'>3/4 BHK</p>
+                        </div>
+                        <div className='px-5' style={{ flex: 1 }}>
+                          <p><i className='fa fa-bed'></i></p>
+                          <p className='overview-config-title'>Configuration</p>
+                          <p className='overview-config-desc'>3/4 BHK</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -216,7 +231,7 @@ function App() {
                           </div>
                         </div>
                       </div>
-                      <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
+                      <button className='floor-plan-item-btn mt-3' onClick={handleShow}>Price Breakup</button>
                     </div>
                   </div>
                 </div>
@@ -237,7 +252,7 @@ function App() {
                           </div>
                         </div>
                       </div>
-                      <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
+                      <button className='floor-plan-item-btn mt-3' onClick={handleShow}>Price Breakup</button>
                     </div>
                   </div>
                 </div>
@@ -264,13 +279,13 @@ function App() {
                     <th scope="row">3 BHK (Type-1)</th>
                     <td>90.84</td>
                     <td>21.38</td>
-                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
+                    <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
                   </tr>
                   <tr>
                     <th scope="row">4 BHK (Type-1)</th>
                     <td>90.84</td>
                     <td>21.38</td>
-                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
+                    <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -560,17 +575,17 @@ function App() {
                   <tr>
                     <th scope="row">3 BHK (Type-1)</th>
                     <td>90.84</td>
-                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
+                    <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
                   </tr>
                   <tr>
                     <th scope="row">4 BHK (Type-1)</th>
                     <td>90.84</td>
-                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
+                    <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
                   </tr>
                   <tr>
                     <th scope="row">4 BHK (Type-1)</th>
                     <td>90.84</td>
-                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
+                    <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -649,26 +664,26 @@ function App() {
                 <div className='col-lg-6'>
                   <div class="form-group">
                     <span><i className='fa fa-user'></i></span>
-                    <input class="form-field" type="text" placeholder="Name" required/>
+                    <input class="form-field" type="text" placeholder="Name" required />
                   </div>
                 </div>
                 <div className='col-lg-6'>
-                <div class="form-group">
+                  <div class="form-group">
                     <span><i className='fa fa-phone'></i></span>
-                    <input class="form-field" type="text" placeholder="Mobile" required/>
+                    <input class="form-field" type="text" placeholder="Mobile" required />
                   </div>
                 </div>
                 <div className='col-lg-12'>
                   <div class="form-group">
                     <span><i className='fa fa-envelope'></i></span>
-                    <input class="form-field" type="text" placeholder="Email" required/>
+                    <input class="form-field" type="text" placeholder="Email" required />
                     <span>@gmail.com</span>
                   </div>
                 </div>
               </div>
-              <Button className = "floor-plan-item-btn w-100 py-3" type = "submit">
-              Save Changes
-            </Button>
+              <Button className="floor-plan-item-btn w-100 py-3" type="submit">
+                Save Changes
+              </Button>
             </form>
           </Modal.Body>
         </Modal>

@@ -57,10 +57,10 @@ hr {
 
 .nav-item a{
   color: #000;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   transition: 0.2s;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
 
@@ -80,15 +80,25 @@ hr {
   position: absolute;
   width: 30%;
   z-index: 999;
-  background: #fff;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.74);
   padding: 1em;
-  border-radius: 20px;
+  border-radius: 10px;
   bottom: 85px;
-  left: 30px
+  left: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .branding-title-location{
-  font-size: 24px;
+  font-size: 18px;
+}
+
+.branding-title-specs{
+  font-size: 25px;
+}
+
+.branding-title-price{
+  font-size: 22px;
 }
 
 /* Overview Section */
@@ -107,7 +117,7 @@ hr {
 }
 
 .overview-main {
-  background: #f6e09d;
+  background: rgba(0,0,0,0.1);
   padding: 1em;
 }
 
@@ -122,13 +132,13 @@ hr {
 .border-partial {
   height: 400px;
   position: relative;
-  border-bottom: 5px solid #f6e09d;
-  border-top: 5px solid #f6e09d;
-  border-left: 5px solid #f6e09d;
+  border-bottom: 5px solid rgba(0,0,0,0.1);
+  border-top: 5px solid rgba(0,0,0,0.1);
+  border-left: 5px solid rgba(0,0,0,0.1);
 }
 
 .border-partial-right-top {
-  border-left: 7px solid #f6e09d;
+  border-left: 7px solid rgba(0,0,0,0.1);
   position: absolute;
   top: 0;
   right: 0;
@@ -136,7 +146,7 @@ hr {
 }
 
 .border-partial-right-bottom {
-  border-left: 7px solid #f6e09d;
+  border-left: 7px solid rgba(0,0,0,0.1);
   position: absolute;
   top: 90%;
   right: 0;
@@ -146,12 +156,12 @@ hr {
 /* Gradient overview Section */
 
 .overview-description{
-  background: var(--group-background-focus);
+  background: rgba(240,240,240, 0.4);
 }
 
 .gradient-bg {
   background-color: var(--group-background-focus);
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  /* background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
   color: #fff;
   padding: 2em 0;
 }
@@ -198,6 +208,10 @@ hr {
   background: var(--group-background-focus);
   font-weight: 600;
   color: #fff;
+}
+
+.floor-plan-item-btn:hover{
+  background: var(--group-background-focus);
 }
 
 .floor-plan-item i{
