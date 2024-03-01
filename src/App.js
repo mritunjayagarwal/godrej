@@ -251,7 +251,7 @@ function App() {
             <hr className='blue-hr' />
             <div className='mt-5' style={{ background: "#fff", padding: "5px" }}>
               <table class="table table-striped text-center m-0">
-                <thead style={{ background: "#0a4f79", color: "#fff", borderTop: "2px solid #0a4f79", fontWeight: 300 }}>
+                <thead style={{ background: "#C3AA62", color: "#fff", borderTop: "2px solid #C3AA62", fontWeight: 300 }}>
                   <tr>
                     <th scope="col">Typology</th>
                     <th scope="col">Carpet Area (Sq m)</th>
@@ -264,13 +264,13 @@ function App() {
                     <th scope="row">3 BHK (Type-1)</th>
                     <td>90.84</td>
                     <td>21.38</td>
-                    <td>@mdo</td>
+                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
                   </tr>
                   <tr>
                     <th scope="row">4 BHK (Type-1)</th>
                     <td>90.84</td>
                     <td>21.38</td>
-                    <td>@fat</td>
+                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -548,8 +548,8 @@ function App() {
             <h1 className='text-center section-header'>Pricing</h1>
             <hr className='blue-hr' />
             <div className='mt-5' style={{ background: "#fff", padding: "5px" }}>
-              <table class="table table-striped text-center m-0">
-                <thead style={{ background: "#0a4f79", color: "#fff", borderTop: "2px solid #0a4f79", fontWeight: 300 }}>
+              <table class="table text-center m-0">
+                <thead style={{ background: "#C3AA62", color: "#fff", borderTop: "2px solid #f9f9f9", fontWeight: 300 }}>
                   <tr>
                     <th scope="col">Type</th>
                     <th scope="col">Scalable Area</th>
@@ -560,12 +560,17 @@ function App() {
                   <tr>
                     <th scope="row">3 BHK (Type-1)</th>
                     <td>90.84</td>
-                    <td>21.38</td>
+                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
                   </tr>
                   <tr>
                     <th scope="row">4 BHK (Type-1)</th>
                     <td>90.84</td>
-                    <td>21.38</td>
+                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4 BHK (Type-1)</th>
+                    <td>90.84</td>
+                    <td><button className='floor-plan-item-btn'>Check Price</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -644,33 +649,28 @@ function App() {
                 <div className='col-lg-6'>
                   <div class="form-group">
                     <span><i className='fa fa-user'></i></span>
-                    <input class="form-field" type="text" placeholder="Name" />
+                    <input class="form-field" type="text" placeholder="Name" required/>
                   </div>
                 </div>
                 <div className='col-lg-6'>
                 <div class="form-group">
                     <span><i className='fa fa-phone'></i></span>
-                    <input class="form-field" type="text" placeholder="Mobile" />
+                    <input class="form-field" type="text" placeholder="Mobile" required/>
                   </div>
                 </div>
                 <div className='col-lg-12'>
                   <div class="form-group">
                     <span><i className='fa fa-envelope'></i></span>
-                    <input class="form-field" type="text" placeholder="Email" />
+                    <input class="form-field" type="text" placeholder="Email" required/>
                     <span>@gmail.com</span>
                   </div>
                 </div>
               </div>
-            </form>
-          </Modal.Body>
-          <Modal.Footer style={{ border: "unset" }}>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
+              <Button className = "floor-plan-item-btn w-100 py-3" type = "submit">
               Save Changes
             </Button>
-          </Modal.Footer>
+            </form>
+          </Modal.Body>
         </Modal>
       </main>
     </div>

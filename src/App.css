@@ -107,7 +107,7 @@ hr {
 }
 
 .overview-main {
-  background: #0c86a0;
+  background: #f6e09d;
   padding: 1em;
 }
 
@@ -122,13 +122,13 @@ hr {
 .border-partial {
   height: 400px;
   position: relative;
-  border-bottom: 5px solid #0f6fac;
-  border-top: 5px solid #0f6fac;
-  border-left: 5px solid #0f6fac;
+  border-bottom: 5px solid #f6e09d;
+  border-top: 5px solid #f6e09d;
+  border-left: 5px solid #f6e09d;
 }
 
 .border-partial-right-top {
-  border-left: 7px solid #0f6fac;
+  border-left: 7px solid #f6e09d;
   position: absolute;
   top: 0;
   right: 0;
@@ -136,7 +136,7 @@ hr {
 }
 
 .border-partial-right-bottom {
-  border-left: 7px solid #0f6fac;
+  border-left: 7px solid #f6e09d;
   position: absolute;
   top: 90%;
   right: 0;
@@ -269,12 +269,12 @@ hr {
 .dot {
   height: 35px;
   width: 35px;
-  background-color: rgba(70, 155, 235, 0.6);
+  background-color: rgba(195, 170, 98, 0.8  );
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   bottom: 0;
-  left: 30%;
+  left: 25%;
 }
 
 .project-item-title {
@@ -292,8 +292,7 @@ hr {
 }
 
 .luxurious-amenities-item{
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #C3AA62;
   padding: 1em 2em;
   border-radius: 20px;
   text-align: center;
