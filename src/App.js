@@ -3,9 +3,15 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 function App() {
   const [selected, setSelected] = useState("btn1");
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const responsive = {
     1366: {
       items: 4,
@@ -189,7 +195,7 @@ function App() {
                           </div>
                         </div>
                       </div>
-                      <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
+                      <button className='floor-plan-item-btn mt-3' variant="primary" onClick={handleShow}>Price Breakup</button>
                     </div>
                   </div>
                 </div>
@@ -241,7 +247,7 @@ function App() {
         </section>
         <section className='configurations-section'>
           <div className='container'>
-            <h1 className='text-center section-header text-white'>Configurations</h1>
+            <h1 className='text-center section-header'>Configurations</h1>
             <hr className='blue-hr' />
             <div className='mt-5' style={{ background: "#fff", padding: "5px" }}>
               <table class="table table-striped text-center m-0">
@@ -394,7 +400,7 @@ function App() {
                     <div>
                       <img src={require('./img/slider.webp')} className='w-100' alt="" />
                     </div>
-                    <p className='mt-2' style={{textAlign: "left", color: "#000", textDecoration: "none"}}>Living Room</p>
+                    <p className='mt-2' style={{ textAlign: "left", color: "#000", textDecoration: "none" }}>Living Room</p>
                   </div>
                 </a>
               </div>
@@ -567,7 +573,7 @@ function App() {
           </div>
         </section>
         <section className='site-visit'>
-          <div style={{ background: "#0A4F79", height: "150px" }}></div>
+          <div style={{ background: "#C3AA62", height: "150px" }}></div>
           <div className='container'>
             <div className='site-visit-card'>
               <div className='row'>
@@ -625,6 +631,47 @@ function App() {
             </p>
           </div>
         </footer>
+        <Modal show={show} onHide={handleClose} size="lg"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered>
+          <Modal.Header style={{ border: "unset", display: "unset" }}>
+            <h1 className='text-center section-header'>ENQUIRE NOW</h1>
+            <p className='text-center'>Kindly share your detailss to know more about Godrej Tropical Isle</p>
+          </Modal.Header>
+          <Modal.Body style={{ border: "unset" }}>
+            <form action="">
+              <div className='row'>
+                <div className='col-lg-6'>
+                  <div class="form-group">
+                    <span><i className='fa fa-user'></i></span>
+                    <input class="form-field" type="text" placeholder="Name" />
+                  </div>
+                </div>
+                <div className='col-lg-6'>
+                <div class="form-group">
+                    <span><i className='fa fa-phone'></i></span>
+                    <input class="form-field" type="text" placeholder="Mobile" />
+                  </div>
+                </div>
+                <div className='col-lg-12'>
+                  <div class="form-group">
+                    <span><i className='fa fa-envelope'></i></span>
+                    <input class="form-field" type="text" placeholder="Email" />
+                    <span>@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </Modal.Body>
+          <Modal.Footer style={{ border: "unset" }}>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </main>
     </div>
   );
