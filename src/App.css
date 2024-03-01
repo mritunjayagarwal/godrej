@@ -46,7 +46,7 @@ hr {
   font-size: 14px;
   font-weight: 600;
   transition: 0.2s;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -310,7 +310,7 @@ hr {
 }
 
 .notSelected {
-  color: #fff;
+  color: #000;
   background-color: transparent;
   border: unset;
   outline: unset;

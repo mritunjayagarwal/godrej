@@ -8,8 +8,8 @@ function App() {
   const [selected, setSelected] = useState("btn1");
   const responsive = {
     1366: {
-      items: 3,
-      margin: 50
+      items: 4,
+      margin: 40
     },
     1024: {
       items: 3,
@@ -155,69 +155,84 @@ function App() {
         </section>
         <section>
           <div className='container'>
-            <h1 className='section-header text-center'>Floor Plans</h1>
+            <h1 className='section-header text-center'>Plans</h1>
             <hr className='blue-hr' />
-            <div className='row mt-5'>
-              <div className='col-lg-4'>
-                <div className='floor-plan-item'>
-                  <div className=''>
-                    <div className='border floor-plan-item-img-wrapper'>
-                      <img src="https://fpg.roomsketcher.com/image/supplier/22/image/Apartment-3D-Floor-Plan.jpg" className='img-fluid floor-img' alt="" />
-                    </div>
-                    <div className='d-flex align-items-center mt-3'>
-                      <div className='d-flex align-items-center'>
-                        <div className='px-2 d-flex align-items-center justify-content-center'>
-                          <img src="https://uxwing.com/wp-content/themes/uxwing/download/household-and-furniture/double-bed-icon.png" className='img-fluid bed-icon' alt="" />
-                        </div>
-                        <div className=''>
-                          <p className='m-0 floor-plan-item-type'>Type</p>
-                          <p className='m-0 floor-plan-item-desc'>3BHK</p>
+            <div className='text-center mt-5'>
+              <div className="buttons">
+                <button id="option1Btn" className={selected === "btn1" ? "selected" : "notSelected"} onClick={() => setSelected("btn1")}>
+                  Master Plan
+                </button>
+                <button className={selected === "btn2" ? "selected" : "notSelected"} onClick={() => setSelected("btn2")}>
+                  Unit Plans
+                </button>
+              </div>
+            </div>
+            <div className={selected == 'btn1' ? 'mt-5 display-block' : 'display-none'}>
+              <img src="https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fdelf2iyv2crlj.cloudfront.net%2FImages%2Fdw-Godrej-TropicalIsle-Ncr-Master-Plan_1820X800%204f504b8b-2b71-4a45-b66b-83792abf60c3.webp&w=1920&q=75" className='img-fluid' alt="" />
+            </div>
+            <div className={selected == 'btn2' ? 'display-block' : 'display-none'}>
+              <div className={`mt-5 row`}>
+                <div className='col-lg-4'>
+                  <div className='floor-plan-item'>
+                    <div className=''>
+                      <div className='border floor-plan-item-img-wrapper'>
+                        <img src="https://fpg.roomsketcher.com/image/supplier/22/image/Apartment-3D-Floor-Plan.jpg" className='img-fluid floor-img' alt="" />
+                      </div>
+                      <div className='d-flex align-items-center mt-3'>
+                        <div className='d-flex align-items-center'>
+                          <div className='px-2 d-flex align-items-center justify-content-center'>
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/household-and-furniture/double-bed-icon.png" className='img-fluid bed-icon' alt="" />
+                          </div>
+                          <div className=''>
+                            <p className='m-0 floor-plan-item-type'>Type</p>
+                            <p className='m-0 floor-plan-item-desc'>3BHK</p>
+                          </div>
                         </div>
                       </div>
+                      <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
                     </div>
-                    <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
                   </div>
                 </div>
-              </div>
-              <div className='col-lg-4'>
-                <div className='floor-plan-item'>
-                  <div className=''>
-                    <div className='border floor-plan-item-img-wrapper'>
-                      <img src="https://fpg.roomsketcher.com/image/supplier/22/image/Apartment-3D-Floor-Plan.jpg" className='img-fluid floor-img' alt="" />
-                    </div>
-                    <div className='d-flex align-items-center mt-3'>
-                      <div className='d-flex align-items-center'>
-                        <div className='px-2 d-flex align-items-center justify-content-center'>
-                          <img src="https://uxwing.com/wp-content/themes/uxwing/download/household-and-furniture/double-bed-icon.png" className='img-fluid bed-icon' alt="" />
-                        </div>
-                        <div className=''>
-                          <p className='m-0 floor-plan-item-type'>Type</p>
-                          <p className='m-0 floor-plan-item-desc'>3BHK</p>
+                <div className='col-lg-4'>
+                  <div className='floor-plan-item'>
+                    <div className=''>
+                      <div className='border floor-plan-item-img-wrapper'>
+                        <img src="https://fpg.roomsketcher.com/image/supplier/22/image/Apartment-3D-Floor-Plan.jpg" className='img-fluid floor-img' alt="" />
+                      </div>
+                      <div className='d-flex align-items-center mt-3'>
+                        <div className='d-flex align-items-center'>
+                          <div className='px-2 d-flex align-items-center justify-content-center'>
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/household-and-furniture/double-bed-icon.png" className='img-fluid bed-icon' alt="" />
+                          </div>
+                          <div className=''>
+                            <p className='m-0 floor-plan-item-type'>Type</p>
+                            <p className='m-0 floor-plan-item-desc'>3BHK</p>
+                          </div>
                         </div>
                       </div>
+                      <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
                     </div>
-                    <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
                   </div>
                 </div>
-              </div>
-              <div className='col-lg-4'>
-                <div className='floor-plan-item'>
-                  <div className=''>
-                    <div className='border floor-plan-item-img-wrapper'>
-                      <img src="https://fpg.roomsketcher.com/image/supplier/22/image/Apartment-3D-Floor-Plan.jpg" className='img-fluid floor-img' alt="" />
-                    </div>
-                    <div className='d-flex align-items-center mt-3'>
-                      <div className='d-flex align-items-center'>
-                        <div className='px-2 d-flex align-items-center justify-content-center'>
-                          <img src="https://uxwing.com/wp-content/themes/uxwing/download/household-and-furniture/double-bed-icon.png" className='img-fluid bed-icon' alt="" />
-                        </div>
-                        <div className=''>
-                          <p className='m-0 floor-plan-item-type'>Type</p>
-                          <p className='m-0 floor-plan-item-desc'>3BHK</p>
+                <div className='col-lg-4'>
+                  <div className='floor-plan-item'>
+                    <div className=''>
+                      <div className='border floor-plan-item-img-wrapper'>
+                        <img src="https://fpg.roomsketcher.com/image/supplier/22/image/Apartment-3D-Floor-Plan.jpg" className='img-fluid floor-img' alt="" />
+                      </div>
+                      <div className='d-flex align-items-center mt-3'>
+                        <div className='d-flex align-items-center'>
+                          <div className='px-2 d-flex align-items-center justify-content-center'>
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/household-and-furniture/double-bed-icon.png" className='img-fluid bed-icon' alt="" />
+                          </div>
+                          <div className=''>
+                            <p className='m-0 floor-plan-item-type'>Type</p>
+                            <p className='m-0 floor-plan-item-desc'>3BHK</p>
+                          </div>
                         </div>
                       </div>
+                      <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
                     </div>
-                    <button className='floor-plan-item-btn mt-3'>Price Breakup</button>
                   </div>
                 </div>
               </div>
@@ -368,29 +383,19 @@ function App() {
             </div>
           </div>
         </section>
-        <section style = {{background: "#0C86A0"}}>
-          <h1 className='section-header text-center text-white'>Gallery</h1>
+        <section>
+          <h1 className='section-header text-center'>Gallery</h1>
           <hr className='blue-hr' />
           <div className='text-center mt-5'>
-            <div className="buttons">
-              <button id="option1Btn" className={selected === "btn1" ? "selected" : "notSelected"} onClick={() => setSelected("btn1")}>
-                INTERIOR
-              </button>
-              <button className={selected === "btn2" ? "selected" : "notSelected"} onClick={() => setSelected("btn2")}>
-                EXTERIOR
-              </button>
-            </div>
-            <OwlCarousel className= {`owl-theme mt-5 ${selected == 'btn1' ? 'display-block': 'display-none'}`} loop items={1} autoplay={true} autoplayTimeout={3000} dots={false} nav={false} responsive={responsive}>
+            <OwlCarousel className={`owl-theme mt-5 ${selected == 'btn1' ? 'display-block' : 'display-none'}`} loop items={1} autoplay={true} autoplayTimeout={3000} dots={false} nav={false} responsive={responsive}>
               <div class='item d-flex align-items-center'>
-                <a href={require('./img/slider.jpg')} className='glightbox3'>
-                <img src={require('./img/slider.jpg')} className='glightbox w-100' alt="" />
-                </a>
-              </div>
-            </OwlCarousel>
-            <OwlCarousel className= {`owl-theme mt-5 ${selected == 'btn2' ? 'display-block': 'display-none'}`} loop items={1} autoplay={true} autoplayTimeout={3000} dots={false} nav={false} responsive={responsive}>
-              <div class='item d-flex align-items-center'>
-                <a href={require('./img/slide2.jpg')} className='glightbox3'>
-                <img src={require('./img/slide2.jpg')} className='glightbox w-100' alt="" />
+                <a href={require('./img/slider.webp')} className='text-black'>
+                  <div>
+                    <div>
+                      <img src={require('./img/slider.webp')} className='w-100' alt="" />
+                    </div>
+                    <p className='mt-2' style={{textAlign: "left", color: "#000", textDecoration: "none"}}>Living Room</p>
+                  </div>
                 </a>
               </div>
             </OwlCarousel>
@@ -527,7 +532,7 @@ function App() {
                 <button className='floor-plan-item-btn mt-3'>Get Location on Whatsapp</button>
               </div>
               <div className='col-lg-6 d-flex align-items-center justify-content-center'>
-                <img src="https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/images/map.webp" className='img-fluid' style={{ width: "80%" }} alt="" />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.79425628473!2d77.89761231381465!3d27.17615042512287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740d857c2f41d9%3A0x784aef38a9523b42!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1709295775922!5m2!1sen!2sin" width="600" height="450" style={{ "border": 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
