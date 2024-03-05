@@ -44,38 +44,38 @@ function App() {
             <div class="collapse navbar-collapse text-white" id="navbarText">
               <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a href="/" class="px-3 pt-2 btn-link">
+                  <a href="#overview" class="px-3 pt-2 btn-link">
                     Overview
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class='px-3 pt-2 btn-link' href='/xnetwork'>
+                  <a class='px-3 pt-2 btn-link' href='#plans'>
                     Floor Plans
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class='px-3 pt-2 btn-link' href='/nft'>
+                  <a class='px-3 pt-2 btn-link' href='#highlights'>
                     Project Highlights
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class='px-3 pt-2 btn-link' href='/nft'>
+                  <a class='px-3 pt-2 btn-link' href='#price'>
                     Price
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class='px-3 pt-2 btn-link' href='/nft'>
+                  <a class='px-3 pt-2 btn-link' href='#gallery'>
                     Gallery
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class='px-3 pt-2 btn-link' href='/nft'>
+                  <a class='px-3 pt-2 btn-link' href='#location'>
                     Location
                   </a>
                 </li>
               </ul>
               <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item godrej-logo-wrapper">
                   <img src="https://www.godrejproperties.com/backoffice/data_content/projects/godrej_tropical_isle_2_noida/landing_page/images/project_logo.png" class="img-fluid godrej-logo-right" alt="" />
                 </li>
               </ul>
@@ -98,8 +98,8 @@ function App() {
             </div>
           </OwlCarousel>
         </section>
-        <section className="overview">
-          <div className='container-fluid px-5'>
+        <section className="overview" id = "overview">
+          <div className='container-fluid overview-padding'>
             <div className="overview-wrapper">
               <div className='row pl-3'>
                 <div className='col-lg-3 border-partial'>
@@ -174,7 +174,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section id = "plans">
           <div className='container'>
             <h1 className='section-header text-center'>Plans</h1>
             <hr className='blue-hr' />
@@ -260,17 +260,18 @@ function App() {
             </div>
           </div>
         </section>
-        <section className='configurations-section'>
+        <section className='configurations-section' id = "highlights">
           <div className='container'>
             <h1 className='text-center section-header'>Configurations</h1>
             <hr className='blue-hr' />
-            <div className='mt-5' style={{ background: "#fff", padding: "5px" }}>
-              <table class="table table-striped text-center m-0">
+            <div className='mt-5 table-responsive text-nowrap' style={{ background: "#fff", padding: "5px" }}>
+              <table class="table table-striped table-fixed text-center m-0">
                 <thead style={{ background: "#C3AA62", color: "#fff", borderTop: "2px solid #C3AA62", fontWeight: 300 }}>
                   <tr>
                     <th scope="col">Typology</th>
                     <th scope="col">Carpet Area (Sq m)</th>
                     <th scope="col">Exclusive Area (Sq m)</th>
+                    <th scope="col">Super Area (Sq ft)</th>
                     <th scope="col">Check Price</th>
                   </tr>
                 </thead>
@@ -279,11 +280,13 @@ function App() {
                     <th scope="row">3 BHK (Type-1)</th>
                     <td>90.84</td>
                     <td>21.38</td>
+                    <td>21.38</td>
                     <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
                   </tr>
                   <tr>
                     <th scope="row">4 BHK (Type-1)</th>
                     <td>90.84</td>
+                    <td>21.38</td>
                     <td>21.38</td>
                     <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
                   </tr>
@@ -404,7 +407,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section id = "gallery">
           <h1 className='section-header text-center'>Gallery</h1>
           <hr className='blue-hr' />
           <div className='text-center mt-5'>
@@ -478,13 +481,13 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section is = "location">
           <div className='container'>
             <h1 className='section-header'>Premium Connectivity</h1>
             <hr className='blue-hr' style={{ margin: "unset" }} />
             <div className='row'>
               <div className='col-lg-6'>
-                <p className='mt-3'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis molestiae corporis architecto nulla quibusdam quos fuga, recusandae quis ab animi nostrum, temporibus enim ducimus ullam molestias dolore vitae ipsam perspiciatis.</p>
+                <p className='mt-3'><span className='location-tag'>Location:</span> Advant, Sector 142, Noida</p>
                 <div className='d-flex justify-content-between align-items-center'>
                   <div className='d-flex align-items-center justify-content-center'>
                     <div>
@@ -495,7 +498,7 @@ function App() {
                     </div>
                   </div>
                   <div>
-                    55mins
+                    <span className='distance-highlight'>55</span> Mins
                   </div>
                 </div>
                 <div className='d-flex justify-content-between align-items-center'>
@@ -508,7 +511,7 @@ function App() {
                     </div>
                   </div>
                   <div>
-                    55mins
+                    <span className='distance-highlight'>55</span> Mins
                   </div>
                 </div>
                 <div className='d-flex justify-content-between align-items-center'>
@@ -521,7 +524,7 @@ function App() {
                     </div>
                   </div>
                   <div>
-                    55mins
+                    <span className='distance-highlight'>55</span> Mins
                   </div>
                 </div>
                 <div className='d-flex justify-content-between align-items-center'>
@@ -534,7 +537,7 @@ function App() {
                     </div>
                   </div>
                   <div>
-                    55mins
+                    <span className='distance-highlight'>55</span> Mins
                   </div>
                 </div>
                 <div className='d-flex justify-content-between align-items-center'>
@@ -547,18 +550,18 @@ function App() {
                     </div>
                   </div>
                   <div>
-                    55mins
+                    <span className='distance-highlight'>55</span> Mins
                   </div>
                 </div>
                 <button className='floor-plan-item-btn mt-3'>Get Location on Whatsapp</button>
               </div>
-              <div className='col-lg-6 d-flex align-items-center justify-content-center'>
+              <div className='col-lg-6 d-flex align-items-center justify-content-center pt-3'>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.79425628473!2d77.89761231381465!3d27.17615042512287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740d857c2f41d9%3A0x784aef38a9523b42!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1709295775922!5m2!1sen!2sin" width="600" height="450" style={{ "border": 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
         </section>
-        <section className='configurations-section' style={{ background: "rgba(240,240,240, 0.4)" }}>
+        <section id = "price" className='configurations-section' style={{ background: "rgba(240,240,240, 0.4)" }}>
           <div className='container'>
             <h1 className='text-center section-header'>Pricing</h1>
             <hr className='blue-hr' />
@@ -659,24 +662,24 @@ function App() {
             <p className='text-center'>Kindly share your detailss to know more about Godrej Tropical Isle</p>
           </Modal.Header>
           <Modal.Body style={{ border: "unset" }}>
-            <form action="">
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
               <div className='row'>
                 <div className='col-lg-6'>
                   <div class="form-group">
                     <span><i className='fa fa-user'></i></span>
-                    <input class="form-field" type="text" placeholder="Name" required />
+                    <input class="form-field" type="text" placeholder="Name" name = "Name" required />
                   </div>
                 </div>
                 <div className='col-lg-6'>
                   <div class="form-group">
                     <span><i className='fa fa-phone'></i></span>
-                    <input class="form-field" type="text" placeholder="Mobile" required />
+                    <input class="form-field" type="text" placeholder="Mobile" name = "mobile" required />
                   </div>
                 </div>
                 <div className='col-lg-12'>
                   <div class="form-group">
                     <span><i className='fa fa-envelope'></i></span>
-                    <input class="form-field" type="text" placeholder="Email" required />
+                    <input class="form-field" type="text" placeholder="Email" name = "email" required />
                     <span>@gmail.com</span>
                   </div>
                 </div>

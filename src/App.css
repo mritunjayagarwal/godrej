@@ -19,6 +19,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -114,6 +115,11 @@ hr {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.overview-padding{
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .overview-main {
@@ -587,4 +593,93 @@ footer p {
 
 .form-group:focus-within > span > i {
   color: var(--group-color-focus);
+}
+
+
+.distance-highlight{
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.location-tag{
+  color: var(--group-background-focus);
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Cinzel;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  .branding-modal{
+    width: 55%;
+    bottom: 0;
+    left: 0;
+    padding: 0.5em
+  }
+
+  .branding-modal > .floor-plan-item-btn{
+    font-size: 10px;
+    padding: 0.5em 2em;
+  }
+
+  .branding-title-location{
+    font-size: 12px;
+  }
+  
+  .branding-title-specs{
+    font-size: 12px;
+  }
+  
+  .branding-title-price{
+    font-size: 12px;
+  }
+
+  .nav-item{
+    margin-left: 0px;
+    padding: 5px;
+    border-bottom: 1px solid var(--group-background-focus);
+  }
+
+  .nav-item a{
+    margin-left: -15px;
+  }
+
+  .godrej-logo-wrapper{
+    text-align: right;
+    border-bottom: unset;
+  }
+
+  .section-header{
+    font-size: 30px;
+  }
+
+  .overview-wrapper {
+    background: var(--group-background-focus);
+    height: 600px;
+  }
+
+  .overview-absolute{
+    margin: 50px 0;
+  }
+  .overview-main {
+    background-color: transparent;
+  }
+
+  .overview-title{
+    font-size: 28px;
+  }
+
+  .overview-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .border-partial{
+    visibility: hidden ;
+  }
+
+  .floor-plan-item{
+    margin-top: 30px;
+  }
 }
