@@ -481,7 +481,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section is = "location">
+        <section id = "location">
           <div className='container'>
             <h1 className='section-header'>Premium Connectivity</h1>
             <hr className='blue-hr' style={{ margin: "unset" }} />
@@ -645,13 +645,7 @@ function App() {
         </section>
         <footer>
           <div className='container'>
-            <h6 style={{ textDecoration: "underline" }}>Privacy Policy</h6>
-            <h6 className='mt-3'>Disclaimer: </h6>
-            <p>
-              Godrej Properties Limited (Cin no. L74120MH1985PLC035308) (“Company’’)”) is developing a residential group housing project namely “Godrej Tropical Isle (“Project”), situated at Sector 146, Noida , which is registered with Uttar Pradesh Real Estate Regulatory Authority vide RERA Registration No. UPRERAPRJ303390 dated 08.06.2023 (website: www.up-rera.in ). The Project is being developed over a period of time, pursuant to building plan no. 2023/03/28/8690 dated 08.06.2023 valid for five years granted by Noida Authority for the Project and any further revisions and renewals in future. The terms of allotment/sale shall be subject to documents executed with the Company and approvals. Approvals are subject to change and revision.
-
-              All information and visuals are an architect's impression. Nothing contained herein intends to constitute a legal offer and does not form part of any legally binding agreement. Recipients/ viewers are requested to verify all the details, specifications, including areas, amenities, services, payment plans and other relevant terms independently, have thorough understanding of the same and take appropriate advice prior to concluding any decision for buying in the Project. For more information, please visit – www.godrejproperties.com. Terms and conditions apply.
-            </p>
+            <h6 className='mt-3'><a href = "https://godrejhousing.in/Tropicalisle/Authorizedchannelpartner/privacy.html">Disclaimer and Privacy Policy</a></h6>
           </div>
         </footer>
         <Modal show={show} onHide={handleClose} size="lg"
