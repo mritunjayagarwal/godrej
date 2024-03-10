@@ -697,7 +697,7 @@ function App() {
                   <div class="form-group">
                     <span><i className='fa fa-envelope'></i></span>
                     <input class="form-field" type="text" placeholder="Email" name = "email" required />
-                    <span>@gmail.com</span>
+                    {/* <span>@gmail.com</span> */}
                   </div>
                 </div>
               </div>
