@@ -90,7 +90,7 @@ hr {
   background: rgba(0, 0, 0, 0.74);
   padding: 1em;
   border-radius: 10px;
-  bottom: 85px;
+  bottom: 50px;
   left: 30px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -393,6 +393,7 @@ i {
   border-radius: 20px;
   margin-top: -80px;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+  padding-bottom: 50px;
 }
 
 .card-form{
