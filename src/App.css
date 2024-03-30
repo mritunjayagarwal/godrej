@@ -688,7 +688,33 @@ footer {
 }
 
 
-/* Home Page */
+/*--------------------------- Home Page --------------------------------- */
+
+.home-enquiry-form{
+  position: absolute;
+  bottom: 50px;
+  z-index: 99;
+  right: 50px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1.5em;
+  width: 400px;
+  border-radius: 10px
+}
+
+.home-enquiry-form-head{
+  font-size: 30px;
+  color: #fff;
+}
+
+.home-enquiry-form input, .home-enquiry-form select{
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px
+}
+
+
+
+
 
 .property-item{
   box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
