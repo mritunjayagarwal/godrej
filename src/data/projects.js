@@ -70,7 +70,7 @@ const projects = [
                 "Name": "GODREJ TROPICAL ISLE",
                 "Type": "3 & 4 BHK ULTRA LUXURY APARTMENTS",
                 "Price": "₹ 3.20 CR* ONWARDS",
-                "Location": "SECTOR 146, NOIDA"
+                "Location": "SECTOR 146,NOIDA"
             },
             {
                 "Id": 5,
