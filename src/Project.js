@@ -594,9 +594,9 @@ function Project() {
                 <thead style={{ background: "#C3AA62", color: "#fff", borderTop: "2px solid #f9f9f9", fontWeight: 300 }}>
                   <tr>
                     <th scope="col">Type</th>
-                    <th scope="col">Scalable Area</th>
-                    <th scope="col">Scalable Area</th>
-                    <th scope="col">Scalable Area</th>
+                    <th scope="col">Carptr Area</th>
+                    <th scope="col">Exclusive Area</th>
+                    <th scope="col">Super Area</th>
                     <th scope="col">Price</th>
                   </tr>
                 </thead>
