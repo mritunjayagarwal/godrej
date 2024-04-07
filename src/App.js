@@ -5,8 +5,9 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import pricing from './data/pricing';
 
-function App() {
+function Project() {
   const [selected, setSelected] = useState("btn1");
   const [show, setShow] = useState(false);
 
@@ -510,7 +511,7 @@ function App() {
             <hr className='blue-hr' style={{ margin: "unset" }} />
             <div className='row'>
               <div className='col-lg-6'>
-                <p className='mt-3'><span className='location-tag'>Location:</span> Advant, Sector 142, Noida</p>
+                <p className='mt-3'><span className='location-tag'>Location:</span> Plot No. GH, 01 A, FF92+G6, near, Noida-Greater Noida Expy, Sector 146, Noida, Uttar Pradesh 201310</p>
                 <div className='d-flex justify-content-between align-items-center'>
                   <div className='d-flex align-items-center justify-content-center'>
                     <div>
@@ -579,7 +580,7 @@ function App() {
                 <a href = "https://api.whatsapp.com/send?phone=15551234567"><button className='floor-plan-item-btn mt-3'>Get Location on Whatsapp</button></a>
               </div>
               <div className='col-lg-6 d-flex align-items-center justify-content-center pt-3'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113579.79425628473!2d77.89761231381465!3d27.17615042512287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740d857c2f41d9%3A0x784aef38a9523b42!2sAgra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1709295775922!5m2!1sen!2sin" width="600" height="450" style={{ "border": 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.2582443822785!2d77.4484090751987!3d28.471768475752942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc207a3513f71%3A0xa938d6d7d3f206bb!2sGodrej%20Tropical%20Isle%2C%20Sector%20146%2C%20Noida!5e0!3m2!1sen!2sin!4v1712448128143!5m2!1sen!2sin" width="600" height="450" style={{ "border": 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
@@ -589,30 +590,31 @@ function App() {
             <h1 className='text-center section-header'>Pricing</h1>
             <hr className='blue-hr' />
             <div className='mt-5' style={{ background: "#fff", padding: "5px" }}>
-              <table class="table text-center m-0">
+              <table class="table text-center m-0 table-bordered">
                 <thead style={{ background: "#C3AA62", color: "#fff", borderTop: "2px solid #f9f9f9", fontWeight: 300 }}>
                   <tr>
                     <th scope="col">Type</th>
-                    <th scope="col">Scalable Area</th>
+                    <th scope="col">Carptr Area</th>
+                    <th scope="col">Exclusive Area</th>
+                    <th scope="col">Super Area</th>
                     <th scope="col">Price</th>
                   </tr>
                 </thead>
                 <tbody className='bg-light'>
-                  <tr>
-                    <th scope="row">3 BHK (Type-1)</th>
-                    <td>90.84</td>
-                    <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
+                  {pricing.map(price => {
+                    return <><tr>
+                    <th scope="row" rowSpan="2" style={{verticalAlign: "middle"}}>{price.Name}</th>
+                    <td>{price.Carprt.sqmtr + " sqmt"}</td>
+                    <td>{price.Exclusive.sqmtr + " sqmt"}</td>
+                    <td>{price.Super.sqmtr + " sqmt"}</td>
+                    <td rowSpan="2" style={{verticalAlign: "middle"}}><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
                   </tr>
                   <tr>
-                    <th scope="row">4 BHK (Type-1)</th>
-                    <td>90.84</td>
-                    <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4 BHK (Type-1)</th>
-                    <td>90.84</td>
-                    <td><button className='floor-plan-item-btn' onClick={handleShow}>Check Price</button></td>
-                  </tr>
+                  <td>{price.Carprt.sqft + " sqft"}</td>
+                    <td>{price.Carprt.sqft + " sqft"}</td>
+                    <td>{price.Carprt.sqft + " sqft"}</td>
+                  </tr></>
+                  })}
                 </tbody>
               </table>
             </div>
@@ -712,4 +714,4 @@ function App() {
   );
 }
 
-export default App;
+export default Project;
